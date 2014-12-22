@@ -11,7 +11,7 @@ saved and grouped by test-class and test-case.
 This project isn't production ready yet. The API may change at any given time. Do not use this library in production code until the 1.0.0 version is released. When the first version is released you will be able to include the dependency via the maven central repository. Until then you will have to build the library by yourself.
 
 ##Prerequisites
-In order to use the trekkr library add the following dependency to your pom file
+In order to use the trekkr library add the following dependency to your pom file:
 
 ````xml
 <dependency>
@@ -19,7 +19,7 @@ In order to use the trekkr library add the following dependency to your pom file
   <artifactId>trekkr</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <scope>test</scope>
-</dependency
+</dependency>
 ````
 
 ##Usage
@@ -74,7 +74,7 @@ public class SampleTest implements ProvidesWebDriver {
 }
 ````
 
-The two ways to create screenshots are the following
+The two ways to create screenshots are the following:
 
 You can either use the _ScreenshotManager_ rule to directly take a screenshot.
 ````java
