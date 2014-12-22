@@ -74,6 +74,23 @@ public class SampleTest implements ProvidesWebDriver {
 }
 ````
 
+The two ways to create screenshots are the following
+
+You can either use the _ScreenshotManager_ rule to directly take a screenshot.
+````java
+//somewhere in your test case
+screenShotManager.takeScreenshot("my-screenshot-name");
+````
+
+Or use the _TakeScreenshot_ annotation to automatically take a screenshot at the end of the test.
+````java
+@Test
+@TakeScreenshot("my-special-screenshot")
+public void someTest() {
+	// do something
+}
+````
+
 Essentially there are three things you have to do:
 
 1. provide a _WebDriver_ instance through the _ProvidesWebDriver_ interface
