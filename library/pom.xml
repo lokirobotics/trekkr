@@ -8,6 +8,28 @@
 	<description>Trekkr lets you create screenshots of your selenium test cases the easy way.</description>
 	<url>https://github.com/lokirobotics/trekkr</url>
 
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
+	
+	<developers>
+		<developer>
+			<name>Christoph Fichtmueller</name>
+			<email>github@lokirobotics.de</email>
+			<organization>lokirobotics</organization>
+			<organizationUrl>https://github.com/lokirobotics</organizationUrl>
+		</developer>
+	</developers>
+	
+	<scm>
+  		<connection>scm:git:git@github.com:lokirobotics/trekkr.git</connection>
+  		<developerConnection>scm:git:git@github.com:lokirobotics/trekkr.git</developerConnection>
+  		<url>git@github.com:lokirobotics/trekkr.git</url>
+	</scm>
+
 	<properties>
 		<jdk.version>1.7</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
