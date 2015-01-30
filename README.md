@@ -13,7 +13,7 @@ This project isn't production ready yet. The API may change at any given time. D
 ##Status
 [![Build Status](https://travis-ci.org/lokirobotics/trekkr.svg)](https://travis-ci.org/lokirobotics/trekkr)
 
-![Dependency Status](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef/badge.svg?style=flat)
+[![Dependency Status](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef)
 
 ##Prerequisites
 In order to use the trekkr library add the following dependency to your pom file:
