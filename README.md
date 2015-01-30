@@ -11,6 +11,8 @@ saved and grouped by test-class and test-case.
 This project isn't production ready yet. The API may change at any given time. Do not use this library in production code until the 1.0.0 version is released. When the first version is released you will be able to include the dependency via the maven central repository. Until then you will have to build the library by yourself.
 
 ##Status
+[![Build Status](https://travis-ci.org/lokirobotics/trekkr.svg)](https://travis-ci.org/lokirobotics/trekkr)
+
 ![Dependency Status](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef/badge.svg?style=flat)
 
 ##Prerequisites
