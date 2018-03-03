@@ -1,5 +1,4 @@
-trekkr
-======
+# trekkr
 
 trekkr is a small library intended to be used in selenium test cases.
 
@@ -7,31 +6,30 @@ If you ever had to take screenshots in your test cases trekkr is the right tool 
 Via a simple API you can create named screenshots. They will be automatically be
 saved and grouped by test-class and test-case.
 
-##Disclaimer
+## Disclaimer
+
 This project isn't production ready yet. The API may change at any given time. Do not use this library in production code until the 1.0.0 version is released. When the first version is released you will be able to include the dependency via the maven central repository. Until then you will have to build the library by yourself.
 
-##Status
-[![Build Status](https://travis-ci.org/lokirobotics/trekkr.svg)](https://travis-ci.org/lokirobotics/trekkr)
+## Status
+[![Build Status](https://travis-ci.org/lokirobotics/trekkr.svg)](https://travis-ci.org/lokirobotics/trekkr)  [![Dependency Status](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef)
 
-[![Dependency Status](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef/badge.svg?style=flat)](https://www.versioneye.com/user/projects/54cb78bede7924d4b00001ef)
-
-##Prerequisites
+## Prerequisites
 In order to use the trekkr library add the following dependency to your pom file:
 
-````xml
+```xml
 <dependency>
   <groupId>com.lokirobotics</groupId>
   <artifactId>trekkr</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <scope>test</scope>
 </dependency>
-````
+```
 
-##Usage
+## Usage
 
 As the goal of the trekkr library is the easy creation of screenshots it doesn't take much to do so.
 
-````java
+```java
 
 // imports omitted
 
@@ -67,34 +65,30 @@ public class SampleTest implements ProvidesWebDriver {
 		getWebDriver().get("http://en.wikipedia.org/wiki/Selenium_(software)");
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * @see com.lokirobotics.trekkr.ProvidesWebDriver#getWebDriver()
-	 */
 	@Override
 	public WebDriver getWebDriver() {
 		return this.webDriver;
 	}
 
 }
-````
+```
 
 The two ways to create screenshots are the following:
 
 You can either use the _ScreenshotManager_ rule to directly take a screenshot.
-````java
+```java
 //somewhere in your test case
 screenShotManager.takeScreenshot("my-screenshot-name");
-````
+```
 
 Or use the _TakeScreenshot_ annotation to automatically take a screenshot at the end of the test.
-````java
+```java
 @Test
 @TakeScreenshot("my-special-screenshot")
 public void someTest() {
 	// do something
 }
-````
+```
 
 Essentially there are three things you have to do:
 
